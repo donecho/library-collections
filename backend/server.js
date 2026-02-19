@@ -36,20 +36,14 @@ const allowedOrigins = [
   "http://localhost:5173"
 ];
 
+
 app.use(cors({
-  origin: function(origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error("CORS Blocked"));
-    }
-  },
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"],
+  origin: [
+    "https://burmese-library-system.vercel.app",
+    "http://localhost:5173"
+  ],
   credentials: true
 }));
-
-app.options("*", cors());
 
 
 
