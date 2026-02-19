@@ -32,7 +32,7 @@ app.use(
 app.use(express.json());
 
 const allowedOrigins = [
-  "https://burmese-library-system.vercel.app",
+  "https://burmese-library-system-57swfqxwm-done-chos-projects.vercel.app",
   "http://localhost:5173"
 ];
 
@@ -49,7 +49,7 @@ app.use(cors({
   credentials: true
 }));
 
-app.options("/*", cors());
+app.options("*", cors());
 
 
 
