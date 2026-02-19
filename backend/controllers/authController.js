@@ -2,8 +2,6 @@ const User = require('../models/User');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const { registerSchema } = require("../utils/validator");
-
-//   try {
 //     const { name, email, password } = req.body;
 //     const { error } = registerSchema.validate(req.body);
 
