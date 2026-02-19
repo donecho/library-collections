@@ -33,7 +33,7 @@ app.use(
 app.use(express.json());
 
 const allowedOrigins = [
-  "https://burmese-library-system.vercel.app",
+  "library-collections.vercel.app",
   "http://localhost:5173"
 ];
 
